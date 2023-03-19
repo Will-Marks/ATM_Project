@@ -1,4 +1,2 @@
-package projects.atm.usersTest;
-
-public class UsersTest {
+package projects.atm.usersTest;public class UsersTest {
 }
