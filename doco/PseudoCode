@@ -1,0 +1,21 @@
+1. READ the
+
+
+
+
+
+
+
+
+
+THE TASK:
+
+Create an ATM machine
+
+You must set up opening Bank Accounts for the 3 users named in the data. The account
+information is only to update when they enter the quit command. If they kill the application the
+information will be lost – this is acceptable for this exercise not for production.
+
+
+
+
