@@ -1,10 +1,7 @@
 package projects.atm;
 
-/**
- * Hello world!
- *
- */
-public class App 
+
+public class Atm
 {
     public static void main( String[] args )
     {
