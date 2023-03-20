@@ -1,4 +1,37 @@
-1. READ the
+1. READ data from 'UserInfo.txt'
+
+2.
+WHILE rows left
+    READ in data
+    CREATE Users
+END WHILE
+
+
+3.
+PRINT Please enter your user ID
+
+4.
+READ user input
+
+5.
+IF user ID == 001, 002, 003
+
+    PRINT Welcome 'name' please select an option:
+    - 1 for Deposit
+    - 2 for  Withdraw
+    - 3 for Balance
+    - q to Quit
+
+    ELSE
+    PRINT Unknown ID
+
+6.
+READ user input
+
+
+
+
+
 
 
 
