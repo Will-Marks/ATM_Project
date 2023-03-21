@@ -10,14 +10,17 @@ public class FileReadInTest {
 
     public List<String[]> getFileContents( String filePath, String separator, boolean readFirstLine) throws FileNotFoundException {
 
-        List<String[]> userinfo = new ArrayList<String[]>();
+        List<String[]> userInfo = new ArrayList<String[]>();
 
         try (Scanner scanner = new Scanner(new File(filePath));) {
             while (scanner.hasNextLine()) {
-                userinfo.add (scanner.nextLine().split(separator));
+                userInfo.add (scanner.nextLine().split(separator));
             }
-        } catch (FileNotFoundException scannerException );{
+        } catch (FileNotFoundException scannerException ){
             System.out.println(scannerException);
         }
+        if(readFirstLine) userInfo.remove(0);
+
+        return userInfo;
     }
 }
