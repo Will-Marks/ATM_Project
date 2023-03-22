@@ -1,38 +1,26 @@
 package projects.atm;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
-public class AtmTest
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AtmTest(String testName )
-    {
-        super( testName );
+import projects.atm.filehandlingTest.FileHandlingTest;
+
+import java.io.File;
+
+public class AtmTest {
+
+    public static void main(String[] args) {
+
+        FileHandlingTest fileHandlingTest = new FileHandlingTest();
+        File userInfoFile = fileHandlingTest.getFile("UserInfo.txt");
+
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AtmTest.class );
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
-}
+
+
+
+
+
+
+
+
