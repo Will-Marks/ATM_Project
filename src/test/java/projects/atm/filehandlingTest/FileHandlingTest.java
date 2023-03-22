@@ -14,7 +14,7 @@ public class FileHandlingTest {
 
     public List<String[]> getCSVContents(File userFile, String separator, boolean readFirstLine) {
 
-        List<String[]> userInfoFile = new ArrayList<String[]>();
+        ArrayList<String[]> userInfoFile = new ArrayList<>();
 
 
         if (userFile != null){
