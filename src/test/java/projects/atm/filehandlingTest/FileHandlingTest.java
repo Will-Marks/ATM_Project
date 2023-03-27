@@ -25,6 +25,7 @@ public class FileHandlingTest {
 
             assertEquals("John", users.get(0)[0]);
             assertNotEquals("Leanne", users.get(0)[0]);
+            assertEquals("Kim", users.get(2)[0]);
         }
     }
 }

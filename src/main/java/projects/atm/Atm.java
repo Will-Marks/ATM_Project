@@ -4,6 +4,7 @@ package projects.atm;
 import projects.atm.filehandling.FileHandling;
 
 import java.io.File;
+import java.util.Arrays;
 import java.util.List;
 
 public class Atm {
@@ -14,7 +15,7 @@ public class Atm {
         File userFile = filehandler.getFile("data/UserInfo.txt");
         List<String[]> users = filehandler.getCSVContents(userFile, ",", false);
         for (String[] x : users) {
-            System.out.println(x[0]);
+            System.out.println(Arrays.toString(x));
 
 
         }

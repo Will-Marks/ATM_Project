@@ -1,9 +1,9 @@
-1. READ data from 'UserInfo.txt'
+1. READ data from 'UserInfo.txt'                          // Done
 
 2.
 WHILE rows left
     READ in data
-    CREATE Users
+    add users to hashmap
 END WHILE
 
 
