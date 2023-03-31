@@ -2,28 +2,29 @@ package projects.atm.filehandling;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class FileHandling {
 
 
 
-        public List<String[]> getCSVContents (File userFile, String separator,boolean ignoreFirstLine){
+        public HashMap<String, String> getCSVContents (File userFile, String separator){
 
-            ArrayList<String[]> userInfoFile = new ArrayList<>();
-
-
+//            ArrayList<String[]> userInfoFile = new ArrayList<>();  (Old)
+            HashMap<String, String> userInfoFile = new HashMap<>();
+            userInfoFile.put("004","Harry");
             if (userFile != null) {
                 try (Scanner scanner = new Scanner(userFile)) {
                     while (scanner.hasNextLine()) {
-                        userInfoFile.add(scanner.nextLine().split(separator));
+                        userInfoFile.put(scanner.nextLine().split(separator));  //(Old)
+
+
+// write/research the correct syntax for using Scanner with hashmap. HOMEWORK
                     }
                 } catch (FileNotFoundException scannerException) {
                     System.out.println(scannerException);
                 }
-                if (ignoreFirstLine) userInfoFile.remove(0);
                 return userInfoFile;
             } else return null;
         }

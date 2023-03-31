@@ -5,11 +5,7 @@ import org.junit.Test;
 import projects.atm.filehandling.FileHandling;
 
 import java.io.File;
-import java.util.Arrays;
-import java.util.List;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import java.util.HashMap;
 
 public class FileHandlingTest {
 
@@ -18,14 +14,15 @@ public class FileHandlingTest {
 
         FileHandling filehandler = new FileHandling();
         File userFile = filehandler.getFile("data/UserInfo.txt");
-        List<String[]> users = filehandler.getCSVContents(userFile, ",", true);
-        for (String[] x : users) {
-            System.out.println(Arrays.toString(x));
+        HashMap<String, String> users = filehandler.getCSVContents(userFile, ",");
+//        for (String[] x : users) {
+//            System.out.println(Arrays.toString(x));
+        System.out.println(users);
 
 
-            assertEquals("John", users.get(0)[0]);
-            assertNotEquals("Leanne", users.get(0)[0]);
-            assertEquals("Kim", users.get(2)[0]);
-        }
+//            assertEquals("John", users.get(1)[0]);
+//            assertNotEquals("Leanne", users.get(1)[0]);
+//            assertEquals("Kim", users.get(2)[0]);
+//        }
     }
 }
