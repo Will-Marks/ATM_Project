@@ -3,7 +3,7 @@
 2.
 WHILE rows left
     READ in data
-    add users to hashmap
+    add Users to hashmap
 END WHILE
 
 

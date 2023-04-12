@@ -3,6 +3,7 @@ package projects.atm.filehandlingTest;
 
 import org.junit.Test;
 import projects.atm.filehandling.FileHandling;
+import projects.atm.users.User;
 
 import java.io.File;
 import java.util.HashMap;
@@ -14,10 +15,10 @@ public class FileHandlingTest {
 
         FileHandling filehandler = new FileHandling();
         File userFile = filehandler.getFile("data/UserInfo.txt");
-        HashMap<String, String> users = filehandler.getCSVContents(userFile, ",");
+        HashMap<String, User> users = filehandler.getCSVContents(userFile, ",");
 //        for (String[] x : users) {
 //            System.out.println(Arrays.toString(x));
-        System.out.println(users);
+        System.out.println(users.get("001"));
 
 
 //            assertEquals("John", users.get(1)[0]);
