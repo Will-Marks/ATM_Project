@@ -18,7 +18,7 @@ public class FileHandlingTest {
         HashMap<String, User> users = filehandler.getCSVContents(userFile, ",");
 //        for (String[] x : users) {
 //            System.out.println(Arrays.toString(x));
-        System.out.println(users.get("001"));
+        System.out.println(users.get("001").getAccountOwnerID());
 
 
 //            assertEquals("John", users.get(1)[0]);

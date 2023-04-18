@@ -4,11 +4,11 @@
 WHILE rows left
     READ in data
     add Users to hashmap
-END WHILE
+END WHILE                                                 // Done
 
 
 3.
-PRINT Please enter your user ID
+PRINT Please enter your user ID                           // Done
 
 4.
 READ user input

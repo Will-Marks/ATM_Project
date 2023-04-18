@@ -6,6 +6,7 @@ import projects.atm.users.User;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Atm {
     public static void main(String[] args) {
@@ -17,13 +18,38 @@ public class Atm {
         HashMap<String, User> users = filehandler.getCSVContents(userFile, ",");
 //        for (HashMap<String, String> x : users) {
 //            System.out.println(Arrays.toString(x));
-        System.out.println(users.get("002").getFirstName());
+//        System.out.println(users.get("001").getSurname());
 
+        Scanner userIdCheck = new Scanner(System.in);
 
+        System.out.println("Please enter your user ID:");
+
+        String userId = userIdCheck.nextLine();
+
+        if( users.containsKey(userId)){
+            System.out.println("Welcome " + users.get(userId).getFirstName());
+        } else {
+            System.out.println("Incorrect, please try again.");
         }
+
+
+
+
+////        if (!userIdCheck.hasNext("001")) {
+//            if (userIdCheck. {
+//            System.out.println("Incorrect, try again");
+//        } else {
+//            System.out.println("Correct!");
+//        }
+//
+//
+//
+//
+
+//        if(userIdCheck.nextLine(users.containsKey())){
+//            System.out.println("nice");
+
     }
-
-//    }
-
+}
 
 
