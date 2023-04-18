@@ -20,17 +20,24 @@ public class Atm {
 //            System.out.println(Arrays.toString(x));
 //        System.out.println(users.get("001").getSurname());
 
-        Scanner userIdCheck = new Scanner(System.in);
 
-        System.out.println("Please enter your user ID:");
+            System.out.println("Please enter your User ID:");
+            Scanner userIdCheck = new Scanner(System.in);
+            String userId = userIdCheck.nextLine();
 
-        String userId = userIdCheck.nextLine();
 
-        if( users.containsKey(userId)){
-            System.out.println("Welcome " + users.get(userId).getFirstName());
-        } else {
-            System.out.println("Incorrect, please try again.");
-        }
+            if (users.containsKey(userId)) {
+                System.out.println("Welcome " + users.get(userId).getFirstName() + " " + users.get(userId).getSurname());
+            } else {
+                System.out.println("Incorrect, please try again.");
+            }
+
+
+    }
+}
+
+
+
 
 
 
@@ -49,7 +56,7 @@ public class Atm {
 //        if(userIdCheck.nextLine(users.containsKey())){
 //            System.out.println("nice");
 
-    }
-}
+
+
 
 

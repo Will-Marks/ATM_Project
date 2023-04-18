@@ -11,10 +11,10 @@ END WHILE                                                 // Done
 PRINT Please enter your user ID                           // Done
 
 4.
-READ user input
+READ user input                                           // Done
 
 5.
-IF user ID == 001, 002, 003
+IF user ID == 001, 002, 003                               /
 
     PRINT Welcome 'name' please select an option:
     - 1 for Deposit
