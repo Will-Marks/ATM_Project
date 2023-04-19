@@ -1,7 +1,7 @@
 package projects.atm;
 
 
-import projects.atm.filehandling.FileHandling;
+import projects.atm.filehandling.FileHandlingUsers;
 import projects.atm.users.User;
 
 import java.io.File;
@@ -12,7 +12,7 @@ public class Atm {
     public static void main(String[] args) {
 
 
-        FileHandling filehandler = new FileHandling();
+        FileHandlingUsers filehandler = new FileHandlingUsers();
 
         File userFile = filehandler.getFile("data/UserInfo.txt");
         HashMap<String, User> users = filehandler.getCSVContents(userFile, ",");

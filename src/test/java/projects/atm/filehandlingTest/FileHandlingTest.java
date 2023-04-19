@@ -2,7 +2,7 @@ package projects.atm.filehandlingTest;
 
 
 import org.junit.Test;
-import projects.atm.filehandling.FileHandling;
+import projects.atm.filehandling.FileHandlingUsers;
 import projects.atm.users.User;
 
 import java.io.File;
@@ -13,7 +13,7 @@ public class FileHandlingTest {
     @Test
     public void testFileReadUserInfo() {
 
-        FileHandling filehandler = new FileHandling();
+        FileHandlingUsers filehandler = new FileHandlingUsers();
         File userFile = filehandler.getFile("data/UserInfo.txt");
         HashMap<String, User> users = filehandler.getCSVContents(userFile, ",");
 //        for (String[] x : users) {

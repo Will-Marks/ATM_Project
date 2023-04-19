@@ -36,7 +36,12 @@ IF user ID == 001, 002, 003                               // Done
 
 
 
-7.
+
+7. Figure out what to setup, whether it's the hashmap or a file reader, or both. Think through it logically & use what's already there to guide you.
+
+
+
+8.
 READ user input
 
 
