@@ -21,20 +21,38 @@ public class Atm {
 //        System.out.println(users.get("001").getSurname());
 
 
+
+
+        boolean isValidUser  = false;
+        while (!isValidUser) {
             System.out.println("Please enter your User ID:");
             Scanner userIdCheck = new Scanner(System.in);
             String userId = userIdCheck.nextLine();
 
-
             if (users.containsKey(userId)) {
+                isValidUser = true;
                 System.out.println("Welcome " + users.get(userId).getFirstName() + " " + users.get(userId).getSurname());
-            } else {
-                System.out.println("Incorrect, please try again.");
+            } else {System.out.println("Incorrect User Id");
+
             }
 
 
+
+        } // end while loop
     }
 }
+
+
+//            if (users.containsKey(userId)) {
+//                System.out.println("Welcome " + users.get(userId).getFirstName() + " " + users.get(userId).getSurname());
+//            } else {
+//                System.out.println("Incorrect, please try again.");
+//            }
+
+
+
+
+
 
 
 
