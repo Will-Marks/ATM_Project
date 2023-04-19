@@ -14,7 +14,7 @@ PRINT Please enter your user ID                           // Done
 READ user input                                           // Done
 
 5.
-IF user ID == 001, 002, 003                               /
+IF user ID == 001, 002, 003                               // Done
 
 
     PRINT "Welcome " + 'name'
@@ -24,13 +24,13 @@ IF user ID == 001, 002, 003                               /
     PRINT "Incorrect User ID, please try again"
 
 
-6.
+6.                                                       // Done
     IF user ID == true
 
 
     PRINT "Welcome 'name' please select an option:"
     - 1 for Deposit
-    - 2 for  Withdraw
+    - 2 for Withdraw
     - 3 for Balance
     - q to Quit
 

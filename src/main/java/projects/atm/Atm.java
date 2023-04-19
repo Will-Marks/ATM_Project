@@ -32,13 +32,26 @@ public class Atm {
             if (users.containsKey(userId)) {
                 isValidUser = true;
                 System.out.println("Welcome " + users.get(userId).getFirstName() + " " + users.get(userId).getSurname());
-            } else {System.out.println("Incorrect User Id");
+            } else {System.out.println("Incorrect User ID");
 
             }
-
-
-
         } // end while loop
+
+        System.out.println("Please select an option:"
+                + "\n- 1 for Deposit"
+                + "\n- 2 for Withdraw"
+                + "\n- 3 for Balance"
+                + "\n- q to Quit ");
+
+        Scanner optionSelection = new Scanner(System.in);
+        String optionChoice = optionSelection.nextLine();
+
+
+
+
+
+
+
     }
 }
 
