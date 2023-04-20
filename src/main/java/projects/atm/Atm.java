@@ -1,6 +1,8 @@
 package projects.atm;
 
 
+import projects.atm.accounts.Account;
+import projects.atm.filehandling.FileHandlingAccounts;
 import projects.atm.filehandling.FileHandlingUsers;
 import projects.atm.users.User;
 
@@ -12,14 +14,23 @@ public class Atm {
     public static void main(String[] args) {
 
 
-        FileHandlingUsers filehandler = new FileHandlingUsers();
+        FileHandlingUsers userfilehandler = new FileHandlingUsers();
 
-        File userFile = filehandler.getFile("data/UserInfo.txt");
-        HashMap<String, User> users = filehandler.getCSVContents(userFile, ",");
+        File userFile = userfilehandler.getFile("data/UserInfo.txt");
+        HashMap<String, User> users = userfilehandler.getCSVContents(userFile, ",");
 //        for (HashMap<String, String> x : users) {
 //            System.out.println(Arrays.toString(x));
 //        System.out.println(users.get("001").getSurname());
 
+        FileHandlingAccounts accountfilehandler = new FileHandlingAccounts();
+
+        File accountFile = accountfilehandler.getAccountFile("data/OpeningAccountsData.txt");
+        HashMap<String, Account> accounts = accountfilehandler.getFileContents(accountFile, "|||");
+
+        System.out.println(accounts.get("002").getAccountNumber());
+
+
+        System.out.println(users.get("001").getSurname());
 
 
 
