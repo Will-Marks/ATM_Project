@@ -28,7 +28,7 @@ public class Account {
     }
 
     public void setAccountNumber (String accountNumber ){
-        AccountOwnerID = accountNumber;
+        AccountNumber = accountNumber;
     }
 
     public String getAccountType(){
